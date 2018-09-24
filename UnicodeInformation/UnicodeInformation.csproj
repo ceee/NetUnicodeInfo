@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.Net.Sdk">
   <Import Project="../Common.props" />
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>System.Unicode</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -10,15 +10,19 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup Label="Package">
-    <PackageId>UnicodeInformation</PackageId>
-    <Title>.NET Unicode Information Library</Title>
-    <AssemblyTitle>.NET Unicode Information Library</AssemblyTitle>
+    <PackageId>UnicodeInfo</PackageId>
+    <Title>Unicode Information Library</Title>
+    <AssemblyTitle>Unicode Information Library</AssemblyTitle>
     <Description>Library providing access to Unicode data to .NET clients.</Description>
     <PackageTags>Unicode Unihan Data .NET C# String Text Char Character CodePoint Code Point</PackageTags>
     <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/GoldenCrystal/NetUnicodeInfo</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/GoldenCrystal/NetUnicodeInfo/master/UnicodeCharacterInspector/UnicodeCharacterInspector.ico</PackageIconUrl>
-    <PackageReleaseNotes>Version 2.2.1
+    <PackageProjectUrl>https://github.com/ceee/NetUnicodeInfo/</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/ceee/NetUnicodeInfo/master/UnicodeCharacterInspector/UnicodeCharacterInspector.ico</PackageIconUrl>
+    <PackageReleaseNotes>Version 2.3.0
+-------------
+Converted to .NET Standard 2.0 project.
+
+Version 2.2.1
 -------------
 Added DebuggerDisplay attributes on various types.
 
@@ -44,6 +48,6 @@ Following migration to Unicode 9.0.0, UnicodeRadicalStrokeCount.StrokeCount is n
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.3.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
   </ItemGroup>
 </Project>
